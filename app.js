@@ -41,6 +41,14 @@ async function main() {
   const allListings = await Listing.find({});
   res.render("listings/blog.ejs" , {allListings});
 });
+
+app.get("/listings/subsidy" , async(req,res) =>{
+  res.render("listings/subsidy.ejs");
+});
+
+app.get("/listings/drone" , async(req,res) =>{
+  res.render("listings/drone.ejs");
+});
  //show route
 
 // Show specific listing page
@@ -50,7 +58,7 @@ app.get("/listings/:id", async (req, res) => {
   res.render("listings/show.ejs", { listing });
 });
 
-// Show specific listing's blog page
+// Show specific listing blog page
 app.get("/listings/:id/blog", async (req, res) => {
   let { id } = req.params;
   const listing = await Listing.findById(id);

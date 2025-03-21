@@ -1,7 +1,7 @@
 const sampleListing = [
     {
         Disease: "Leaf Blast",
-        Observation: "Patti par laal dhabbbe (red spots on leaves)",
+        Observation: "red spots on leaves. (पट्टी पर लाल धब्बबे।)",
         Image: "https://agritech.tnau.ac.in/crop_protection/images/rice_diseases/blast_1.jpg",
         Solution:" 1) Tricyclazole 75%(JU MARS , SWAL TRISTAR) + Isoprothiolane 40% EC (TATA FUJIONE) ",
         Price: "200+400 (RESPECTIVELY) + 550-600/acre",
@@ -14,7 +14,7 @@ const sampleListing = [
     },
     {
         Disease: "Sheath blight",
-        Observation: " Patti ka galna (rotting of leaves & causes major limitations on rice production)",
+        Observation: "rotting of leaves & causes major limitations on rice productio. (पट्टी का गलना।)",
         Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5QeUNNdd8Ew9HIJX3gg96bg97vB_6VvkuA&s",
         Solution:"  Hexaconazole 75% WG (JU RAHAT) ",
         Price: "200",
@@ -26,7 +26,7 @@ const sampleListing = [
     },
     {
         Disease: "Bacterial Leaf Blight (BLB)",
-        Observation: " Upar se niche ki taraf patti ka sukhna (drying of leaves from top to bottom)",
+        Observation: "drying of leaves from top to bottom. (ऊपर से नीचे की तरफ पट्टी का सुखना।)",
         Image: "https://lh3.googleusercontent.com/proxy/SZhgq1RoXJsxwitObi7jH5vyaU5QzmlvOFSFZGcNmEAlroKdiAEMGCB62WJlNqu7iG3_K2D_D9UMTuNE-FsCNhtIhIPxu4-orU_kTIAau8CjCDQSrkuBw5wOahsRl3A",
         Solution:"  copper oxychloride 50% WP(CRYSTAL – blue copper , TATA - blutox) + PLANTOMYCIN (Arise agro - plantomycin) ",
         Price: " copper oxychloride 50% WP – 250gm/acre + plantomycin -5-10gm /acre",
@@ -38,7 +38,7 @@ const sampleListing = [
     },
     {
         Disease: "Barnyard Grasses (sawa)",
-        Observation: " A tufted annual grass, up to 60 cm tall",
+        Observation: " A tufted annual grass, up to 60 cm tall. (एक गुच्छेदार वार्षिक घास, 60 सेमी तक ऊँची।)",
         Image: "https://cdn.britannica.com/91/6291-050-EA01D141/Barnyard-grass.jpg",
         Solution:"Fenoxaprop-p-ethyl 9.3% ec ",
         Price: "350-400",
@@ -51,7 +51,7 @@ const sampleListing = [
 
     {
         Disease: "Stem-borer (tana chedak)",
-        Observation: "pati ke nichhle bhag mai gath ke andar ghuskar bich pati ko nukan karta hai(stemborer get inside the lower part of the stem and start eating eat)",
+        Observation: "stemborer get inside the lower part of the stem and start eating eat (तने का छेदक तने के निचले हिस्से के अंदर घुस जाता है और उसे खाना शुरू कर देता है।)",
         Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckRYGTnM2lVGjnR61xUOooxIsmIiM7OPYYQ&s",
         Solution:"1)bifenthrin (product that have bifenthrin – hectaStar) ",
         Price: "250-300",
@@ -63,7 +63,7 @@ const sampleListing = [
     },
     {
         Disease: "Leaf folder",
-        Observation: " andar me jaal banakar ghusa rehta hai or pati muda rahta h. (Leaf folder caterpillars fold a rice leaf around themselves and attach the leaf margins together withsilk strands))",
+        Observation: "Leaf folder caterpillars fold a rice leaf around themselves and attach the leaf margins together withsilk strands (पत्ती मोड़क इल्लियाँ चावल की पत्ती को अपने चारों ओर मोड़ लेती हैं और रेशमी धागों से पत्ती के किनारों को आपस में चिपका देती हैं।)",
         Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn2zoh2K2ffIzXgVc441Fw_F9CK1q2SUXwIQ&s",
         Solution:"1)bifenthrin (product that have bifenthrin – hectaStar) ",
         Price: "250-300",

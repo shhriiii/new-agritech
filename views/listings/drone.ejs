@@ -1,0 +1,67 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container mt-5">
+    <h1 class="agri-hero-text text-center mb-4">Drone Facility Request</h1>
+
+    <div class="row">
+        <!-- Form Section -->
+        <div class="col-md-6">
+            <form action="/listings/drone/submit" method="POST" class="mt-4">
+                <div class="mb-3">
+                    <label for="farmerName" class="form-label">Farmer Name</label>
+                    <input type="text" class="form-control form-control-sm" id="farmerName" name="farmerName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control form-control-sm" id="phoneNumber" name="phoneNumber" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control form-control-sm" id="address" name="address" rows="2" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="areaSize" class="form-label">Area Size (in acres)</label>
+                    <input type="number" class="form-control form-control-sm" id="areaSize" name="areaSize" required>
+                </div>
+
+                <button type="submit" class="btn btn-success">Request Drone Facility</button>
+            </form>
+        </div>
+
+        <!-- Map Section -->
+        <div class="col-md-6">
+            <h5 class="mt-2">Locate Your Farm</h5>
+            <div id="map" style="height: 400px; width: 100%; border-radius: 10px; border: 1px solid #ddd;"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Leaflet JS and CSS for Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+    // Initialize the map and set view to India coordinates
+    var map = L.map('map').setView([20.5937, 78.9629], 5); // Center of India
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add a marker with a popup
+    var marker = L.marker([20.5937, 78.9629]).addTo(map)
+        .bindPopup('Select your farm location here!')
+        .openPopup();
+
+    // On map click, update marker position
+    map.on('click', function (e) {
+        marker.setLatLng(e.latlng)
+            .bindPopup("Farm Location: " + e.latlng.toString())
+            .openPopup();
+    });
+</script>

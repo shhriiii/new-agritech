@@ -3,13 +3,14 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #E4EFE7 !important;
 }
 .container{
     flex: 1;
 }
 .navbar{
     height: 5rem;
-    background-color: rgb(98, 155, 98);
+    background-color: #99BC85;
 }
 .fa-tractor{
     color: peachpuff;
@@ -42,12 +43,12 @@ body{
     text-align: center;
     display: flex;
     height: 5rem;
-    background-color:  rgb(98, 155, 98) ;
+    background-color:  #99BC85 ;
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-evenly;
 }
-.card{
+/* .card{
     border: none !important;
     margin-bottom: 2rem;
 }
@@ -56,7 +57,41 @@ body{
     width: 100% !important;
     object-fit: cover !important;
     height: 50vh;
+} */
+.card {
+    border: 1px solid #ddd !important;
+    border-radius: 1.5rem !important;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
+.card:hover {
+    transform: translateY(-8px);
+}
+.card img {
+    width: 100% !important;
+    height: 50vh !important;
+    object-fit: cover !important;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #679967;
+}
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
 .card-text p{
     font-weight: 400;
 }
@@ -78,22 +113,37 @@ body{
 
 
 
+
 /* start page */
 /* General Styles */
-.agri-body {
-    font-family: "Plus Jakarta Sans", sans-serif !important;
+/* Background container */
+/* Background container */
+.agri-background {
+    flex: 1;
+    background: url('https://plus.unsplash.com/premium_photo-1674019234994-eceabbdd091d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D') 
+    no-repeat center center;
+    background-size: cover;
+    min-height: 100vh; /* Ensures it fits the screen */
+    width: 100%;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f0f8f5; /* Light green background */
+    justify-content: center;
+    align-items: center;
 }
 
+/* Add padding to prevent content from sticking to navbar or footer */
+/* Container with slight white overlay */
 .agri-container {
-    flex: 1;
+
     padding: 20px;
+    border-radius: 1rem;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Navbar Styles */
 .agri-navbar {
@@ -165,3 +215,51 @@ body{
 .me{
     text-decoration: none !important;
 }
+
+/* new */
+/* Drag and Drop Styles */
+/* Drag and Drop Styles */
+.drag-drop-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#drop-area {
+    border: 2px dashed #679967;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f0f8f5;
+    cursor: pointer;
+    max-width: 600px; /* Reduced width by 20-30% */
+    margin: 0 auto; /* Center the box */
+}
+
+.drag-text {
+    font-size: 1.2rem;
+    color: #679967;
+    margin-bottom: 10px;
+}
+
+.drag-button {
+    padding: 10px 20px;
+    background-color: #679967;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.drag-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+

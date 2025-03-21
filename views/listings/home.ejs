@@ -9,7 +9,8 @@
         <h2>Explore Our Resources</h2>
         <!-- Add more content as needed -->
     <!-- </section> -->
-    <body class="agri-body">
+     <!-- puranan -->
+    <!-- <body class="agri-body">
         <nav class="agri-navbar">
           <div class="agri-container">
             <h1 class="agri-title">Welcome to Krishi Kendra</h1>
@@ -21,4 +22,27 @@
             <h2 class="agri-hero-text">Embrace Nature with Modern Farming</h2>
             <a href="/listings"> <button class="agri-button">Start Exploring</button>  </a>
           </section>
+        </div> -->
+
+        <!-- new -->
+        <% layout("/layouts/boilerplate") %>
+        <div class="agri-background">
+          <div class="agri-container">
+            <section class="agri-hero">
+              <h2 class="agri-hero-text">Embrace Nature with Modern Farming</h2>
+              <a href="/listings">
+                <button class="agri-button">Start Exploring</button>
+              </a>
+            </section>
+        
+            <!-- Drag and Drop Image Section -->
+            <section class="drag-drop-container">
+              <div id="drop-area">
+                <h3 class="drag-text">Drag & Drop Image Here For Disease Prediction</h3>
+                <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)" hidden />
+                <label class="drag-button" for="fileElem">Select a File</label>
+              </div>
+            </section>
+          </div>
         </div>
+        
