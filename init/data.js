@@ -27,7 +27,7 @@ const sampleListing = [
     {
         Disease: "Bacterial Leaf Blight (BLB)",
         Observation: "drying of leaves from top to bottom. (ऊपर से नीचे की तरफ पट्टी का सुखना।)",
-        Image: "https://lh3.googleusercontent.com/proxy/SZhgq1RoXJsxwitObi7jH5vyaU5QzmlvOFSFZGcNmEAlroKdiAEMGCB62WJlNqu7iG3_K2D_D9UMTuNE-FsCNhtIhIPxu4-orU_kTIAau8CjCDQSrkuBw5wOahsRl3A",
+        Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8pWT85TEAzBwEPqJO5Jx9zG2ZIBxDeRNNQ&s",
         Solution:"  copper oxychloride 50% WP(CRYSTAL – blue copper , TATA - blutox) + PLANTOMYCIN (Arise agro - plantomycin) ",
         Price: " copper oxychloride 50% WP – 250gm/acre + plantomycin -5-10gm /acre",
         Dose: "450 + 50 resp. (overall 500-550 /acre)",
