@@ -28,6 +28,7 @@ const initDB = async () => {
     // Log success message
     console.log("data was initialized");
   } catch (error) {
+    // Log error message
 
     console.error("Error initializing data:", error);
   }

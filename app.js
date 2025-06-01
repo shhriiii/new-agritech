@@ -30,6 +30,7 @@ async function main() {
     res.render("listings/home.ejs");
 
   });
+  // creating a new listing
   
   //index
   app.get("/listings" , async(req,res) =>{

@@ -51,3 +51,4 @@ const listingSchema = new Schema({
 //export
 const Listing = mongoose.model("Listing" , listingSchema);
 module.exports = Listing;
+// This code defines a Mongoose schema for a "Listing" model, which includes fields for disease information, observations, images, solutions, prices, doses, and blog-related content. The schema enforces required fields and provides
