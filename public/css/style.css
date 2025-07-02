@@ -256,6 +256,22 @@ body{
 
 
 
+.agri-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: 0.2s ease-in-out;
+    outline: none;
+}
+
+.agri-input:focus {
+    border-color: #679967;
+    box-shadow: 0 0 8px rgba(103, 153, 103, 0.5);
+}
 
 
 

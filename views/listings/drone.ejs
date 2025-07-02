@@ -3,33 +3,33 @@
 <div class="container mt-5">
     <h1 class="agri-hero-text text-center mb-4">Drone Facility Request</h1>
 
-    <div class="row">
-        <!-- Form Section -->
-        <div class="col-md-6">
-            <form action="/listings/drone/submit" method="POST" class="mt-4">
-                <div class="mb-3">
-                    <label for="farmerName" class="form-label">Farmer Name</label>
-                    <input type="text" class="form-control form-control-sm" id="farmerName" name="farmerName" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control form-control-sm" id="phoneNumber" name="phoneNumber" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="address" class="form-label">Address</label>
-                    <textarea class="form-control form-control-sm" id="address" name="address" rows="2" required></textarea>
-                </div>
-
-                <div class="mb-3">
-                    <label for="areaSize" class="form-label">Area Size (in acres)</label>
-                    <input type="number" class="form-control form-control-sm" id="areaSize" name="areaSize" required>
-                </div>
-
-                <button type="submit" class="btn btn-success">Request Drone Facility</button>
-            </form>
+   <!-- Form Section -->
+<div class="col-md-6">
+    <form action="/listings/drone/submit" method="POST" class="mt-4">
+        <div class="mb-3">
+            <label for="farmerName" class="form-label">Farmer Name</label>
+            <input type="text" class="agri-input" id="farmerName" name="farmerName" required>
         </div>
+
+        <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="tel" class="agri-input" id="phoneNumber" name="phoneNumber" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea class="agri-input" id="address" name="address" rows="2" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="areaSize" class="form-label">Area Size (in acres)</label>
+            <input type="number" class="agri-input" id="areaSize" name="areaSize" required>
+        </div>
+
+        <button type="submit" class="agri-button">Request Drone Facility</button>
+    </form>
+</div>
+<!--  -->
 
         <!-- Map Section -->
         <div class="col-md-6">

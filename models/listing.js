@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+// This code defines a Mongoose schema for a "Listing" model, which includes fields for disease information, observations, images, solutions, prices, doses, and blog-related content. The schema enforces required fields and provides default values
 
 const listingSchema = new Schema({
     Disease:{ 

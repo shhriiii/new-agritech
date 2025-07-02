@@ -1,5 +1,6 @@
 const sampleListing = [
     {
+        // 
         Disease: "Leaf Blast",
         Observation: "red spots on leaves. (पट्टी पर लाल धब्बबे।)",
         Image: "https://agritech.tnau.ac.in/crop_protection/images/rice_diseases/blast_1.jpg",

@@ -1,1 +1,61 @@
-<div></div>
+<% layout("/layouts/boilerplate") %>
+
+<h2 style="text-align:center; margin-bottom: 1.5rem;">🧑‍🌾 Krishi GPT Chatbot</h2>
+
+<div class="agri-container" style="max-width:600px;">
+  <form id="ask-form">
+    <input 
+      type="text" 
+      id="question" 
+      placeholder="Ask about crop disease..." 
+      required
+      style="
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+        margin-bottom: 1rem;
+        outline: none;
+        transition: 0.2s ease-in-out;
+      "
+      onfocus="this.style.borderColor='#679967'"
+    />
+
+    <button type="submit" class="agri-button">Ask</button>
+  </form>
+
+  <div 
+    id="response" 
+    style="
+      margin-top: 20px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    "
+  ></div>
+</div>
+<!--  -->
+<script>
+  document.getElementById("ask-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const question = document.getElementById("question").value;
+    document.getElementById("response").innerText = "Thinking...";
+
+    const res = await fetch("/chatbot/query", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: question })
+    });
+
+    const data = await res.json();
+    document.getElementById("response").innerText = data.response;
+  });
+</script>
+
+
