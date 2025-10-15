@@ -176,7 +176,10 @@ const catchAsync = (fn) => {
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // ---------- MongoDB Connection ----------
-const MONGO_URL = "mongodb://127.0.0.1:27017/agritech";
+// const MONGO_URL = "mongodb://127.0.0.1:27017/agritech";
+// ---------- MongoDB Connection ----------
+const MONGO_URL = process.env.MONGO_ATLAS_URL;
+
 main()
   .then(() => {
     console.log("✅ MongoDB connection successful");
@@ -317,6 +320,7 @@ app.use((err, req, res, next) => {
 });
 
 // ---------- Start Server ----------
-app.listen(8080, () => {
-  console.log("🚀 Server running on port 8080");
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
