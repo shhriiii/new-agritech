@@ -205,6 +205,22 @@ app.get("/", (req, res) => {
   res.render("listings/home.ejs");
 });
 
+
+// ---------- PASTE THE SEED ROUTE CODE HERE ----------
+// ---------- TEMPORARY SEED ROUTE ----------
+app.get("/seeddb", async (req, res) => {
+  try {
+    const initData = require("./init/data.js"); // Get your sample data
+    await Listing.deleteMany({}); // Clear any old data
+    await Listing.insertMany(initData.data); // Insert the new data
+    console.log("Database was seeded!");
+    res.send("Database was successfully seeded! You can now remove this route.");
+  } catch (error) {
+    console.log("Error seeding database:", error);
+    res.status(500).send("Error seeding the database.");
+  }
+});
+
 // All listings
 app.get("/listings", catchAsync(async (req, res) => {
   const allListings = await Listing.find({});
