@@ -18,6 +18,15 @@ _Built with the tools and technologies:_
 
 ---
 
+
+
+## 🌐 Deployed Link
+
+🚀 **Live Demo:** [Krishi Kendra Deployment](https://new-agritech.onrender.com)
+
+> Explore the live version of the platform and experience AI-powered agricultural assistance in action.
+
+---
 ## 📑 Table of Contents
 
 
